@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+I am a working software engineer 🧑‍💻. 
+Please feel free to fork any of my public repos. 
+Best wishes 👍 to all on your coding journey.
+
 <!--
 **davidpayne-au/davidpayne-au** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
