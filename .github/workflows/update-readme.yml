@@ -25,6 +25,7 @@ jobs:
           OUTPUT="README.md"
           QUOTES_FILE="cheerful-quotes.json"
           QUOTE=$(shuf -n 1 $QUOTES_FILE | tr -d '[]"')
+          echo "Selected quote: $QUOTE"
           sed "s|{{quote}}|$QUOTE|g" $TEMPLATE > $OUTPUT
       - name: Commit and push changes to main branch
         run: |
