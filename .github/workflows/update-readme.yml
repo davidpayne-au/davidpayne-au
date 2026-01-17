@@ -22,7 +22,7 @@ jobs:
           OUTPUT="README.md"
           QUOTES_FILE="cheerful-quotes.json"
           QUOTE=$(shuf -n 1 $QUOTES_FILE | tr -d '[]"')
-          sed "s|{{CHEERFUL_QUOTE}}|$QUOTE|g" $TEMPLATE > $OUTPUT
+          sed "s|{{quote}}|$QUOTE|g" $TEMPLATE > $OUTPUT
       - name: Commit and push changes to main branch
         run: |
           git config --global user.name 'github-actions[bot]'
