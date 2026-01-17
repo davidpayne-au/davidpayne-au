@@ -1,0 +1,30 @@
+# workflow to run on a cron to update the README file with different stats
+name: Update README
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Runs every Sunday at midnight
+  workflow_dispatch:
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Update README with stats
+        run: |
+          # read in the README-template.md and the cheeful-quotes.json and choose a random quote
+          # and replace the placeholder in the README-template.md with the quote
+          TEMPLATE="README-template.md"
+          OUTPUT="README.md"
+          QUOTES_FILE="cheerful-quotes.json"
+          QUOTE=$(shuf -n 1 $QUOTES_FILE | tr -d '[]"')
+          sed "s|{{CHEERFUL_QUOTE}}|$QUOTE|g" $TEMPLATE > $OUTPUT
+      - name: Commit and push changes to main branch
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git checkout main
+          git add README.md
+          git commit -m 'Update README with new cheerful quote' || echo "No changes to commit"
+          git push origin HEAD:main
