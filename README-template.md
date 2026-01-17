@@ -6,4 +6,4 @@ Please feel free to fork 🍴 any of my public repos (sorry, nearly all of them 
 
 **Best wishes** 🌟👍 to all on your coding journey! 🎉
 
-_ {{quote}} _
+_{{quote}}_
