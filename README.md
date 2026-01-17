@@ -6,4 +6,4 @@ Please feel free to fork any of my public repos (sorry, nearly all of them are p
 
 Best wishes 👍 to all on your coding journey.
 
-== Happiness is not something ready made. It comes from your own actions. 🥳 Dalai Lama ==
+  The only way to do great work is to love what you do. 🥳 Steve Jobs,
