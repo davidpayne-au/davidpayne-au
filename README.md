@@ -6,4 +6,4 @@ Please feel free to fork 🍴 any of my public repos (sorry, nearly all of them 
 
 **Best wishes** 🌟👍 to all on your coding journey! 🎉
 
--   Keep your face always toward the sunshine—and shadows will fall behind you. 🥳 Walt Whitman
+-   The only way to do great work is to love what you do. 🥳 Steve Jobs
