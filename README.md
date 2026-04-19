@@ -6,4 +6,4 @@ Please feel free to fork 🍴 any of my public repos (sorry, nearly all of them 
 
 **Best wishes** 🌟👍 to all on your coding journey! 🎉
 
--   The best way to cheer yourself up is to try to cheer somebody else up. 🥳 Mark Twain
+-   The only way to do great work is to love what you do. 🥳 Steve Jobs
